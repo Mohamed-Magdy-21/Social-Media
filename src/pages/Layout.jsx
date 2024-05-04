@@ -1,15 +1,19 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Typography } from "@mui/material";
+import { Outlet } from "react-router-dom";
 
 export default function Root() {
   return (
     <div>
-      <header>  
-        My Header
-        <Outlet /> 
+      <header>
+        <Typography variant="h3" color="initial">a7a name</Typography>
       </header>
+
+      
+      <Outlet />
+
+      <footer>
+        My Footer
+      </footer>
     </div>
-
-
-  )
+  );
 }
